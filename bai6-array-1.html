@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [8, 1, 20, 5, 27, 19, 97, 29, 6, 12];
+    let find = +prompt("Nhập số muốn kiểm tra");
+    document.write("Mảng ban đầu là: "+arr + "<br>")
+    let count=0;
+    for (let i = 0; i < arr.length; i++) {
+        if (find === arr[i]) {
+            count++
+        }
+    }
+    if (count >=1){
+        document.write(find+" is in the array")
+    }
+    if (count === 0) {
+        document.write(find+" is not in the array")
+    }
+</script>
+</html>
